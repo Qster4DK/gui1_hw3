@@ -1,0 +1,39 @@
+<!--
+Colby Mei
+Nov 2023
+GUI1
+-->
+
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <h1>Dynamic Multiplication Table</h1>
+
+    <h2>Please enter the ranges you would like for your table.</h2>
+
+    <form name="cols and rows">
+      <label>Minimum Column Value (From -50 to 50)</label> <input type="text" id="mincols"/><br>
+      <label>Maximum Column Value (From -50 to 50)</label> <input type="text" id="maxcols"/><br>
+      <p class="column-error"></p>
+
+      <label>Minimum Row Value (From -50 to 50)</label> <input type="text" id="minrows"/><br>
+      <label>Maximum Row Value (From -50 to 50)</label> <input type="text" id="maxrows"/><br>
+      <p class="row-error"></p>
+
+      <button type="button" onclick = "generateTable(event)">Generate Table</button>
+    </form>
+    <div id="tablearea">
+      <table id="table">
+
+      </table>
+    </div>
+  <script src="myScript.js"></script>
+</body>
+
+
+</html>
